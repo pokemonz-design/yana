@@ -1,0 +1,327 @@
+<section class="fd-side-cards-yana">
+  <div class="fd-side-cards-yana__header">
+    <div class="fd-side-cards-yana__label">Мнение эксперта</div>
+    <h2>Покажите, что идея не отвергнута, а просчитана</h2>
+    <p>Листайте карточки, чтобы увидеть, как перевести рискованное предложение собственника в рабочий запрос и управленческое решение.</p>
+  </div>
+
+  <input type="radio" name="yana-tabs" id="yana-tab-1" checked>
+  <input type="radio" name="yana-tabs" id="yana-tab-2">
+  <input type="radio" name="yana-tabs" id="yana-tab-3">
+
+  <div class="fd-side-cards-yana__layout">
+    <nav class="fd-side-cards-yana__nav">
+      <label for="yana-tab-1">
+        <span>1</span>
+        <b>Без спора</b>
+      </label>
+
+      <label for="yana-tab-2">
+        <span>2</span>
+        <b>Расчет</b>
+      </label>
+
+      <label for="yana-tab-3">
+        <span>3</span>
+        <b>Решение</b>
+      </label>
+    </nav>
+
+    <div class="fd-side-cards-yana__content">
+      <article class="fd-side-cards-yana__card fd-side-cards-yana__card--1">
+        <h3>Не отвергаю идею в моменте</h3>
+
+        <p>
+          Предложения собственника не всегда оторваны от реальности. Он часто видит возможности быстрее команды.
+          У него может быть выше риск-аппетит, и именно это когда-то помогло ему создать бизнес.
+        </p>
+
+        <p>
+          Но рядом с ним должны быть люди, которые проверят идею с практической стороны и оценят последствия.
+          Поэтому на подобные запросы я не отвечаю устно и тем более не спорю.
+        </p>
+
+        <p>
+          Такой спор быстро превращается в борьбу позиций: собственник считает, что команда сопротивляется изменениям,
+          а CFO пытается доказать, что идея опасна.
+        </p>
+      </article>
+
+      <article class="fd-side-cards-yana__card fd-side-cards-yana__card--2">
+        <h3>Просчитываю запрос и фиксирую задачу</h3>
+
+        <p>
+          Я предпочитаю уточнить идею и зафиксировать ее как рабочую задачу. Например, проверить законные способы
+          снизить налоговую нагрузку и оценить предложенную модель.
+        </p>
+
+        <p>
+          Так собственник видит, что я не отбросила его идею, а готова разобрать ее по существу.
+          После этого готовлю пояснительную записку: показываю возможные варианты, условия применения,
+          источник налоговой выгоды и риски.
+        </p>
+
+        <div class="fd-side-cards-yana__download">
+          <div>
+            <strong>Шаблон для статьи</strong>
+            <p>Скачайте пояснительную записку для собственника и используйте ее как основу для обсуждения.</p>
+          </div>
+          <a href="#" target="_blank" rel="noopener">Скачать шаблон</a>
+        </div>
+      </article>
+
+      <article class="fd-side-cards-yana__card fd-side-cards-yana__card--3">
+        <h3>Даю рекомендации, а не устный отказ</h3>
+
+        <p>
+          Если схема сложная, я добавляю простую схему движения денег и документооборота.
+          Так собственник видит, как предложение будет работать на практике, а не только на уровне идеи.
+        </p>
+
+        <p>
+          В конце записки даю рекомендации: какие варианты можно рассматривать, какие требуют дополнительной
+          юридической экспертизы, а какие лучше не применять.
+        </p>
+
+        <p>
+          В итоге собственник видит, что команда отработала запрос, и получает оценку своей идеи:
+          не эмоциональный отказ, а управленческое решение.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .fd-side-cards-yana {
+    max-width: 980px;
+    margin: 40px auto;
+    padding: 24px;
+    border: 1px solid #d8bf73;
+    border-radius: 18px;
+    background: #f7eddf;
+    color: #050505;
+    font-family: Georgia, "Times New Roman", serif;
+    box-sizing: border-box;
+    overflow-x: auto;
+  }
+
+  .fd-side-cards-yana * {
+    box-sizing: border-box;
+  }
+
+  .fd-side-cards-yana__header {
+    margin-bottom: 22px;
+  }
+
+  .fd-side-cards-yana__label {
+    margin-bottom: 10px;
+    color: #b38b18;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .fd-side-cards-yana__header h2 {
+    margin: 0 0 10px;
+    max-width: 820px;
+    color: #050505;
+    font-size: 34px;
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .fd-side-cards-yana__header p {
+    margin: 0;
+    color: #6b6255;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.45;
+  }
+
+  .fd-side-cards-yana input {
+    display: none;
+  }
+
+  .fd-side-cards-yana__layout {
+    display: grid;
+    grid-template-columns: 150px minmax(520px, 1fr);
+    gap: 14px;
+    align-items: start;
+    min-width: 720px;
+  }
+
+  .fd-side-cards-yana__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .fd-side-cards-yana__nav label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 50px;
+    padding: 10px;
+    border: 1px solid #d8bf73;
+    border-radius: 14px;
+    background: #fffaf2;
+    color: #2a2a2a;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.2;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+
+  .fd-side-cards-yana__nav label span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #b38b18;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .fd-side-cards-yana__nav label:hover {
+    border-color: #b38b18;
+  }
+
+  .fd-side-cards-yana__content {
+    min-height: 390px;
+    border-left: 5px solid #b38b18;
+    border-radius: 18px;
+    background: #ffffff;
+    overflow: hidden;
+  }
+
+  .fd-side-cards-yana__card {
+    display: none;
+    padding: 28px 34px 32px;
+    background: #ffffff;
+  }
+
+  .fd-side-cards-yana__card h3 {
+    margin: 0 0 16px;
+    color: #b38b18;
+    font-size: 28px;
+    line-height: 1.15;
+    font-weight: 700;
+  }
+
+  .fd-side-cards-yana__card p {
+    margin: 0 0 16px;
+    color: #050505;
+    font-size: 20px;
+    line-height: 1.48;
+  }
+
+  .fd-side-cards-yana__card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .fd-side-cards-yana__download {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding: 18px;
+    border: 1px solid #d8bf73;
+    border-radius: 16px;
+    background: #fffaf2;
+    font-family: Arial, sans-serif;
+  }
+
+  .fd-side-cards-yana__download strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #050505;
+    font-size: 16px;
+  }
+
+  .fd-side-cards-yana__download p {
+    margin: 0;
+    color: #6b6255;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.35;
+  }
+
+  .fd-side-cards-yana__download a {
+    flex: 0 0 auto;
+    display: inline-block;
+    padding: 11px 16px;
+    border-radius: 999px;
+    background: #b38b18;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .fd-side-cards-yana__download a:hover {
+    background: #9f7a12;
+  }
+
+  #yana-tab-1:checked ~ .fd-side-cards-yana__layout .fd-side-cards-yana__card--1,
+  #yana-tab-2:checked ~ .fd-side-cards-yana__layout .fd-side-cards-yana__card--2,
+  #yana-tab-3:checked ~ .fd-side-cards-yana__layout .fd-side-cards-yana__card--3 {
+    display: block;
+  }
+
+  #yana-tab-1:checked ~ .fd-side-cards-yana__layout label[for="yana-tab-1"],
+  #yana-tab-2:checked ~ .fd-side-cards-yana__layout label[for="yana-tab-2"],
+  #yana-tab-3:checked ~ .fd-side-cards-yana__layout label[for="yana-tab-3"] {
+    background: #b38b18;
+    color: #ffffff;
+    border-color: #b38b18;
+  }
+
+  #yana-tab-1:checked ~ .fd-side-cards-yana__layout label[for="yana-tab-1"] span,
+  #yana-tab-2:checked ~ .fd-side-cards-yana__layout label[for="yana-tab-2"] span,
+  #yana-tab-3:checked ~ .fd-side-cards-yana__layout label[for="yana-tab-3"] span {
+    background: #ffffff;
+    color: #b38b18;
+  }
+
+  @media (max-width: 760px) {
+    .fd-side-cards-yana {
+      padding: 18px;
+    }
+
+    .fd-side-cards-yana__header h2 {
+      font-size: 28px;
+    }
+
+    .fd-side-cards-yana__layout {
+      grid-template-columns: 140px 520px;
+      min-width: 680px;
+    }
+
+    .fd-side-cards-yana__card {
+      padding: 22px 24px 26px;
+    }
+
+    .fd-side-cards-yana__card h3 {
+      font-size: 24px;
+    }
+
+    .fd-side-cards-yana__card p {
+      font-size: 18px;
+    }
+
+    .fd-side-cards-yana__download {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
