@@ -1,6 +1,6 @@
 <section class="fd-side-cards-yana">
   <div class="fd-side-cards-yana__header">
-    <div class="fd-side-cards-yana__label">Мнение эксперта</div>
+    <div class="fd-side-cards-yana__label">Опыт Яны Миллер</div>
     <h2>Покажите, что взяли идею в работу</h2>
     <p>Листайте карточки, чтобы увидеть, как перевести рискованное предложение собственника в рабочий запрос и управленческое решение.</p>
   </div>
@@ -60,8 +60,6 @@
           После этого готовлю пояснительную записку: показываю возможные варианты, условия применения,
           источник налоговой выгоды и риски.
         </p>
-
-        
       </article>
 
       <article class="fd-side-cards-yana__card fd-side-cards-yana__card--3">
@@ -74,11 +72,9 @@
 
         <p>
           В конце записки даю рекомендации: какие варианты можно рассматривать, какие требуют дополнительной
-          юридической экспертизы, а какие лучше не применять. В итоге собственник видит, что команда отработала запрос, и получает оценку своей идеи:
-          не эмоциональный отказ, а управленческое решение.
+          юридической экспертизы, а какие лучше не применять. В итоге собственник видит, что команда отработала запрос,
+          и получает оценку своей идеи: не эмоциональный отказ, а управленческое решение.
         </p>
-
-       
       </article>
     </div>
   </div>
@@ -188,6 +184,7 @@
 
   .fd-side-cards-yana__content {
     min-height: 390px;
+    max-height: 530px;
     border-left: 5px solid #b38b18;
     border-radius: 18px;
     background: #ffffff;
@@ -196,8 +193,31 @@
 
   .fd-side-cards-yana__card {
     display: none;
+    max-height: 530px;
     padding: 28px 34px 32px;
     background: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #b38b18 #fffaf2;
+  }
+
+  .fd-side-cards-yana__card::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .fd-side-cards-yana__card::-webkit-scrollbar-track {
+    background: #fffaf2;
+    border-radius: 999px;
+  }
+
+  .fd-side-cards-yana__card::-webkit-scrollbar-thumb {
+    background: #b38b18;
+    border-radius: 999px;
+  }
+
+  .fd-side-cards-yana__card::-webkit-scrollbar-thumb:hover {
+    background: #9f7a12;
   }
 
   .fd-side-cards-yana__card h3 {
@@ -299,8 +319,15 @@
       min-width: 680px;
     }
 
+    .fd-side-cards-yana__content {
+      max-height: 530px;
+    }
+
     .fd-side-cards-yana__card {
+      max-height: 530px;
       padding: 22px 24px 26px;
+      overflow-y: auto;
+      overflow-x: hidden;
     }
 
     .fd-side-cards-yana__card h3 {
