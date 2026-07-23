@@ -1,6 +1,6 @@
 <section class="fd-side-cards-yana">
   <div class="fd-side-cards-yana__header">
-    <div class="fd-side-cards-yana__label">Опыт Яны Миллер</div>
+    <div class="fd-side-cards-yana__label">Мнение эксперта</div>
     <h2>Покажите, что взяли идею в работу</h2>
     <p>Листайте карточки, чтобы увидеть, как перевести рискованное предложение собственника в рабочий запрос и управленческое решение.</p>
   </div>
@@ -91,7 +91,7 @@
     color: #050505;
     font-family: Georgia, "Times New Roman", serif;
     box-sizing: border-box;
-    overflow-x: auto;
+    overflow: visible;
   }
 
   .fd-side-cards-yana * {
@@ -136,10 +136,9 @@
 
   .fd-side-cards-yana__layout {
     display: grid;
-    grid-template-columns: 150px minmax(520px, 1fr);
+    grid-template-columns: 150px minmax(0, 1fr);
     gap: 14px;
     align-items: start;
-    min-width: 720px;
   }
 
   .fd-side-cards-yana__nav {
@@ -183,8 +182,7 @@
   }
 
   .fd-side-cards-yana__content {
-    min-height: 390px;
-    max-height: 530px;
+    height: 530px;
     border-left: 5px solid #b38b18;
     border-radius: 18px;
     background: #ffffff;
@@ -193,7 +191,7 @@
 
   .fd-side-cards-yana__card {
     display: none;
-    max-height: 530px;
+    height: 100%;
     padding: 28px 34px 32px;
     background: #ffffff;
     overflow-y: auto;
@@ -239,51 +237,6 @@
     margin-bottom: 0;
   }
 
-  .fd-side-cards-yana__download {
-    display: flex;
-    gap: 18px;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 24px;
-    padding: 18px;
-    border: 1px solid #d8bf73;
-    border-radius: 16px;
-    background: #fffaf2;
-    font-family: Arial, sans-serif;
-  }
-
-  .fd-side-cards-yana__download strong {
-    display: block;
-    margin-bottom: 6px;
-    color: #050505;
-    font-size: 16px;
-  }
-
-  .fd-side-cards-yana__download p {
-    margin: 0;
-    color: #6b6255;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    line-height: 1.35;
-  }
-
-  .fd-side-cards-yana__download a {
-    flex: 0 0 auto;
-    display: inline-block;
-    padding: 11px 16px;
-    border-radius: 999px;
-    background: #b38b18;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-
-  .fd-side-cards-yana__download a:hover {
-    background: #9f7a12;
-  }
-
   #yana-tab-1:checked ~ .fd-side-cards-yana__layout .fd-side-cards-yana__card--1,
   #yana-tab-2:checked ~ .fd-side-cards-yana__layout .fd-side-cards-yana__card--2,
   #yana-tab-3:checked ~ .fd-side-cards-yana__layout .fd-side-cards-yana__card--3 {
@@ -315,19 +268,29 @@
     }
 
     .fd-side-cards-yana__layout {
-      grid-template-columns: 140px 520px;
-      min-width: 680px;
+      grid-template-columns: 120px minmax(0, 1fr);
+      gap: 10px;
+    }
+
+    .fd-side-cards-yana__nav label {
+      min-height: 46px;
+      padding: 9px;
+      font-size: 13px;
+    }
+
+    .fd-side-cards-yana__nav label span {
+      flex: 0 0 26px;
+      width: 26px;
+      height: 26px;
     }
 
     .fd-side-cards-yana__content {
-      max-height: 530px;
+      height: 530px;
     }
 
     .fd-side-cards-yana__card {
-      max-height: 530px;
-      padding: 22px 24px 26px;
-      overflow-y: auto;
-      overflow-x: hidden;
+      height: 100%;
+      padding: 22px 20px 26px;
     }
 
     .fd-side-cards-yana__card h3 {
@@ -336,11 +299,6 @@
 
     .fd-side-cards-yana__card p {
       font-size: 18px;
-    }
-
-    .fd-side-cards-yana__download {
-      flex-direction: column;
-      align-items: flex-start;
     }
   }
 </style>
